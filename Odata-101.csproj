@@ -214,7 +214,6 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="gulpfile.js" />
-    <Content Include="Index2.html" />
     <Content Include="js\ang-load.js" />
     <Content Include="js\ang-controllers.js" />
     <Content Include="js\ang-directives.js" />

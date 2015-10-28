@@ -40,7 +40,9 @@ angular.module('todomvc')
 	            var incompleteTodos = [];
 	            store.todos.forEach(function (todo) {
 	                if (todo.completed) {
-	                    completeTodos.push(todo);
+	                    //completeTodos.push(todo);
+	                    store.api.delete({ id: todo.id }, function () { });
+
 	                } else {
 	                    incompleteTodos.push(todo);
 	                }
@@ -48,10 +50,10 @@ angular.module('todomvc')
 
 	            angular.copy(incompleteTodos, store.todos);
 
-	            return store.api.delete(function () {
-	            }, function error() {
-	                angular.copy(originalTodos, store.todos);
-	            });
+	            //return store.api.delete(function () {
+	            //}, function error() {
+	            //    angular.copy(originalTodos, store.todos);
+	            //});
 	        },
 
 	        delete: function (todo) {

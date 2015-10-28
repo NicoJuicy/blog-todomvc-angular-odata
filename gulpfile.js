@@ -21,10 +21,8 @@ gulp.task("copy", ["clean"], function () {
         "angular": "angular/*.{css,js,map}",
         "angular-route": "angular-route/*.{css,js,map}",
         "angular-resource": "angular-resource/*.{css,js,map}",
-        "angular-odata-resources": "angular-odata-resources/build/odataresources.min.js",
-       
-        "todomvc-common": "todomvc-common/*.{css,js}",
-    }// "todomvc-app-css": "todomvc-app-css/*.{css,js}",
+        "angular-odata-resources": "angular-odata-resources/build/odataresources.min.js"
+    }// "todomvc-app-css": "todomvc-app-css/*.{css,js}", "todomvc-common": "todomvc-common/*.{css,js}",
 
 
 

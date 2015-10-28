@@ -1,0 +1,22 @@
+﻿<!doctype html>
+<html lang="en" data-framework="angularjs">
+<head>
+    <meta charset="utf-8">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/todomvc/css")
+  
+    <style>
+        [ng-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+<body ng-app="todomvc">
+    <ng-view />
+
+    @RenderBody()
+    @Scripts.Render("~/app/app.js")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>
